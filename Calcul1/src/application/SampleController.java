@@ -17,6 +17,12 @@ public class SampleController {
 
     @FXML
     private Button btns;
+    
+    @FXML
+    private Button btnm;
+    
+    @FXML
+    private Button btnd;
 
     @FXML
     private TextField txt1;
@@ -28,6 +34,8 @@ public class SampleController {
     int N2;
     int result;
     int result2;
+    double result3;
+    double result4;
 
     
     //operations 
@@ -68,6 +76,44 @@ public class SampleController {
             result2 = N1 - N2;
             lbl1.setText(Integer.toString(result2));
 
+    }
+
+    @FXML
+    void Multiplication()
+    {
+            try
+                {
+            N1 = Integer.parseInt(txt1.getText());
+            N2 = Integer.parseInt(txt2.getText());
+                } catch (NumberFormatException e)
+                {
+                    Alert alert=new Alert(AlertType.ERROR);
+                    alert.setHeaderText("Attention - Erreur");
+                    alert.setTitle("Erreur");
+                    alert.setContentText("Tu dois ecrire un nombre");
+                    alert.show();
+                }
+            result3 = N1 * N2;
+            lbl1.setText(Double.toString(result3));
+    }
+    
+    @FXML
+    void Division()
+    {
+            try
+                {
+            N1 = Integer.parseInt(txt1.getText());
+            N2 = Integer.parseInt(txt2.getText());
+                } catch (NumberFormatException e)
+                {
+                    Alert alert=new Alert(AlertType.ERROR);
+                    alert.setHeaderText("Attention - Erreur");
+                    alert.setTitle("Erreur");
+                    alert.setContentText("Tu dois ecrire un nombre");
+                    alert.show();
+                }
+            result4 = N1 / N2;
+            lbl1.setText(Double.toString(result4));
     }
 
 
