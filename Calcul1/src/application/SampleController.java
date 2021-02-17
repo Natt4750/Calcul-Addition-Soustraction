@@ -36,7 +36,6 @@ public class SampleController {
     int result2;
     double result3;
     double result4;
-
     
     //operations 
     @FXML
@@ -54,7 +53,7 @@ public class SampleController {
                     alert.setContentText("Tu dois ecrire un nombre");
                     alert.show();
                 }
-            result = N1 + N2;
+            result = N1 + N2;            
             lbl1.setText(Integer.toString(result));
     }
 
