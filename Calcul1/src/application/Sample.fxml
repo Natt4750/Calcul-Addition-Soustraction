@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="896.0" prefWidth="1589.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.SampleController">
+   <children>
+      <Button fx:id="btna" layoutX="91.0" layoutY="481.0" mnemonicParsing="false" onAction="#Addition" text="Addition" />
+      <Button fx:id="btns" layoutX="311.0" layoutY="481.0" mnemonicParsing="false" onAction="#Soustraction" text="Soustraction" />
+      <Label fx:id="lbl1" layoutX="636.0" layoutY="481.0" prefHeight="77.0" prefWidth="141.0" text="Resultat" textFill="RED" />
+      <TextField fx:id="txt1" layoutX="88.0" layoutY="206.0" promptText="Premiere N" />
+      <TextField fx:id="txt2" layoutX="91.0" layoutY="337.0" promptText="Deuxieme N" />
+      <Button fx:id="btnm" layoutX="88.0" layoutY="606.0" mnemonicParsing="false" text="multiplication" />
+      <Button fx:id="btnd" layoutX="383.0" layoutY="606.0" mnemonicParsing="false" text="Division" />
+   </children>
+</AnchorPane>
